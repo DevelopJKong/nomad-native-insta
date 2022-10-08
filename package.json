@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev"
+    "dev": "nodemon --exec babel-node server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/DevelopJKong/nomad-native-insta/issues"
   },
-  "homepage": "https://github.com/DevelopJKong/nomad-native-insta#readme"
+  "homepage": "https://github.com/DevelopJKong/nomad-native-insta#readme",
+  "dependencies": {
+    "apollo-server": "^2.25.2",
+    "graphql": "^15.8.0",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.3"
+  }
 }
