@@ -1,5 +1,7 @@
 import { ApolloServer, gql } from 'apollo-server';
 
+const client = new PrismaClient(); 
+
 const typeDefs = gql`
   type Movie {
     id: Int
@@ -19,7 +21,7 @@ const typeDefs = gql`
 
 const resolvers = {
   Query: {
-    movies: () => [],
+    movies: () => client.movie.findMany(),
     movie: () => ({ title: 'Hello', year: 2021 }),
   },
   Mutation: {
