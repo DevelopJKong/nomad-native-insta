@@ -1,5 +1,28 @@
 {
-    "cSpell.words": [
-        "insta"
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Mysql",
+            "database": "expick",
+            "username": "root",
+            "password": "1234"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "Postgres",
+            "database": "instaclone",
+            "username": "postgres",
+            "password": "1234"
+        }
     ]
 }
